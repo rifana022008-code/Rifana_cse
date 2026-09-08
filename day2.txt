@@ -1,0 +1,84 @@
+qs1:
+
+basic_salary = int(input())
+allowance = int(input())
+bonus = int(input())
+
+total_salary = basic_salary + allowance + bonus
+
+print(total_salary)
+
+
+qs2:
+
+basic_salary = int(input())
+allowance = int(input())
+bonus = int(input())
+
+total_salary = basic_salary + allowance + bonus
+
+print(total_salary)
+
+
+
+qs3:
+
+price = int(input())
+quantity = int(input())
+discount = int(input())
+
+total = price * quantity
+final_amount = total - discount
+
+print(final_amount)
+
+
+
+qs4:
+
+number = int(input())
+hundreds = number//100
+tens = (number // 10) % 10
+units = number % 10
+total = hundreds + tens + units
+print  (hundreds)
+print (tens)
+print (units)
+print(total)
+
+
+qs5:
+
+data_usage = int(input())
+
+gb = data_usage // 1024
+remaining_mb = data_usage % 1024
+
+print(gb)
+print(remaining_mb)
+
+
+qs6:
+
+file_size = int(input())
+
+kb = file_size // 1024
+remaining = file_size % 1024
+
+print("Size: %d KB Remaining: %d bytes" % (kb, remaining))
+
+
+
+qs7:
+
+name = input()
+distance = int(input())
+rate = int(input())
+waiting_fee = int(input())
+
+discount = 0
+
+distance_charge = distance * rate
+final_fare = distance_charge + waiting_fee - discount
+
+print("Vehicle:", name, "Parking Fee: %.2f" % final_fare)
