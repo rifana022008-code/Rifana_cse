@@ -1,0 +1,36 @@
+Q4:RESTAURENT PROBLEM
+
+food_amount = float(input())
+day = input()
+membership = input()
+
+# GST
+gst = food_amount * 0.05
+amount = food_amount + gst
+
+# Service charge
+if day == "Saturday" or day == "Sunday":
+    service = food_amount * 0.10
+else:
+    service = food_amount * 0.05
+
+amount = amount + service
+
+# Membership discount
+if membership == "Gold":
+    discount = amount * 0.08
+    final_bill = amount - discount
+elif membership == "Silver":
+    discount = amount * 0.04
+    final_bill = amount - discount
+else:
+    final_bill = amount
+
+# Cashback
+if final_bill > 3000:
+    cashback = final_bill * 0.02
+else:
+    cashback = 0
+
+print(f"{final_bill:.2f}")
+print(f"{cashback:.2f}")
