@@ -1,0 +1,6 @@
+X, Y, Z = map(int, input().split())
+
+if Z <= 50:
+    print(X)
+else:
+    print(X + (Z - 50) * Y)
