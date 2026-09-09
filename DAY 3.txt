@@ -1,0 +1,42 @@
+QS1:DIRECTION
+
+a=int(input("Enter a number:"))
+if (a>20):
+    print("error")
+elif(a%4==0):
+    print("North")
+elif(a%4==1):
+    print("East")
+elif(a%4==2):
+    print("south")
+else:
+    print("west")
+
+
+QS2:ODD OR EVEN USING IF IN SINGLE LINE
+
+a=int(input())
+print('even' if (a%2==0) else 'odd')
+
+
+
+QS3:RAGSHANA OR KRCE
+
+a=int(input("Enter a number:"))
+if (7<=a<=15 or 25<=a<=40 or a>100):
+        print("ragshana")
+elif (a%2==0):
+            print("KRCE")
+else:
+        print("ragshana")
+
+
+QS4:HACK1(TOUR PLAN 1)
+
+X, Y, Z = map(int, input().split())
+
+if Z <= 50:
+    print(X)
+else:
+    print(X + (Z - 50) * Y)
+
