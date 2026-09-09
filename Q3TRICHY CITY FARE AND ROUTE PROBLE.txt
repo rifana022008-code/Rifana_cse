@@ -1,0 +1,22 @@
+Q3:TRICHY CITY FARE AND ROUTE PROBLEM
+
+
+distance = float(input())
+category = input()
+has_pass = input()
+is_peak_hour = input()
+is_central_route = input()
+
+if distance <= 5:
+    fare = 10
+elif distance <= 15:
+    fare = 10 + (distance - 5) * 2
+else:
+    fare = 30 + (distance - 15) * 0.8
+
+if category == "Student" and has_pass == "true":
+    fare = fare * 0.5
+elif category == "Senior Citizen":
+    fare = fare * 0.7
+
+print(f"{fare:.2f}")
